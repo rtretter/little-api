@@ -1,0 +1,23 @@
+meta {
+  name: Create Note
+  type: http
+  seq: 3
+}
+
+post {
+  url: 127.0.0.1:1323/notes
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: secret
+}
+
+body:json {
+  {
+    "notebook": "notes",
+    "title": "Note Title 2",
+    "content": "This could be any text and is up to your imagination!"
+  }
+}

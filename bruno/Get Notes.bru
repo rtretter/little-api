@@ -1,0 +1,15 @@
+meta {
+  name: Get Notes
+  type: http
+  seq: 2
+}
+
+get {
+  url: 127.0.0.1:1323/notes/notes
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: secret
+}
